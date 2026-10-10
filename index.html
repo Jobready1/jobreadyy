@@ -64,7 +64,7 @@ body[data-region=eg] .zi,body[data-region=intl] .ze{display:none}.cp{font:inheri
 els.forEach(function(e){e.setAttribute('data-ar',e.innerHTML)});
 function lang(en){h.lang=en?'en':'ar';h.dir=en?'ltr':'rtl';els.forEach(function(e){e.innerHTML=e.getAttribute(en?'data-en':'data-ar')});d.title=en?ET:AT;b.textContent=en?'العربية':'English';render();try{localStorage.setItem('lang',en?'en':'ar')}catch(x){}}
 function region(r){d.body.setAttribute('data-region',r);try{localStorage.setItem('region',r)}catch(x){}}
-var CODES={"JOB10":10,"KHATTAB10":10};
+var CODES={"JOB10":10,"KHATTAB20":20};
 var cur=null;
 function render(){var en=h.lang==='en',p=cur?cur.p:0,ms=d.getElementById('cmsg');
 [].forEach.call(d.querySelectorAll('.pe'),function(x){var v=Math.round(+x.getAttribute('data-base')*(1-p/100)),t=v.toLocaleString('en-US');x.textContent=en?'EGP '+t:t+' جنيه'});
